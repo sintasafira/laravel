@@ -79,12 +79,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Web Lanjut
+                    Percakapan
                 </div>
+				
+				{!! Form::open(array('url' =>
+				'percakapan/kirim','method'=>'POST')) !!}
 
-                <div class="links">
-                   <a href="tentang">tentang</a>
-				   <a href="percakapan">percakapan</a>
+                <div>
+                   <strong>Percakapan:</strong>
+				   {!! Form::text('pesan', null,
+				   array('placeholder' => 'Tuliskan pesan'
+				   , 'class' => 'form-control')) !!}
+				   <button type="submit" class="btn
+				   btn-primary">Kirim</button>
                 </div>
             </div>
         </div>

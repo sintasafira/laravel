@@ -18,3 +18,12 @@ Route::get('/', function () {
 Route::get('tentang', function () {
     return view('tentang');
 });
+
+Route::get('percakapan', function () {
+    return view('percakapan');
+});
+
+Route::post('percakapan/kirim', function () {
+    return view('percakapan_kirim');
+});
+
